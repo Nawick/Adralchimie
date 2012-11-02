@@ -112,6 +112,7 @@ public class MainGridView extends View {
 	
 	/*long mAnimStartTime;
 
+
 	Handler mHandler = new Handler();
 	Runnable mTick = new Runnable() {
 	    public void run() {
