@@ -110,7 +110,7 @@ public class MainGridView extends View {
 	private int colDown = 0;
 	private boolean vertical = false;
 	
-	long mAnimStartTime;
+	/*long mAnimStartTime;
 
 	Handler mHandler = new Handler();
 	Runnable mTick = new Runnable() {
@@ -127,7 +127,7 @@ public class MainGridView extends View {
 	
 	void stopAnimation() {
 	    mHandler.removeCallbacks(mTick);
-	}
+	}*/
 	
 	public void animateDown(Paire p, int col1, int col2){
 		eltADown = p.getA();
