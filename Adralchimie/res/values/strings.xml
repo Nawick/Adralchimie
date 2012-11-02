@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, AdralchimieActivity!</string>
+    <string name="app_name">Adralchimie</string>
+    <string name="initScores">0</string>
+    <string name="finalScores">1000</string>
+    <string name="newHighScore">New High Score !</string>
+    <string name="lose">Perdu !</string>
+    <string name="pseudo">noobie001</string>
+    <string name="buttonSave">Enregistrer</string>
+
+</resources>

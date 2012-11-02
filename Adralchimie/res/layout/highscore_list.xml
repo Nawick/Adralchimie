@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+	android:paddingLeft="8dip"
+	android:paddingRight="8dip"
+	android:cacheColorHint="@android:color/transparent"
+	android:background="#ff555555"
+	>
+	
+	<ListView android:id="@android:id/list"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="0dip"
+	    android:cacheColorHint="@android:color/background_light"
+	    android:background="#ff555555"/>
+	    
+    	
+</LinearLayout>

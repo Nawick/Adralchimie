@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/partySection"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/landscape02">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/topSection"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" 
+	    android:layout_alignParentTop="true"
+	    android:paddingTop="8dip"
+	    android:paddingLeft="15dip"
+	    android:paddingRight="5dip"
+	    android:paddingBottom="10dip"
+	    >
+	    <com.naw.graphics.NextNextElementView
+	        
+	        android:id="@+id/nextNextElementSection"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true">
+	        
+	    </com.naw.graphics.NextNextElementView>
+	    
+	    <TextView
+	        android:id="@+id/scoresSection"
+	        android:paddingTop="15dip"
+	        android:paddingLeft="110dip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/nextNextElementSection"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignRight="@+id/topSection"
+	        android:text="@string/initScores"
+	        android:textColor="#ff000000"
+	        android:textStyle="bold"
+	        android:textSize="20sp"
+	        android:shadowColor="#aa000000"  
+	        android:shadowRadius="2.5"  
+	        android:shadowDx="1"  
+	        android:shadowDy="1" 
+	        />
+        
+        
+     </RelativeLayout>
+    
+     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/gameSection"
+		android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" 
+	    android:paddingTop="2dip"
+	    android:paddingLeft="20dip"
+	    android:paddingBottom="20dip"
+	    android:paddingRight="20dip"
+	    android:layout_below="@+id/topSection"
+	    
+	    >
+	      <com.naw.graphics.NextElementView 
+	        android:id="@+id/nextElementSection"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        />
+	      
+	      <com.naw.graphics.MainGridView
+	           android:id="@+id/gridSection"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_below="@+id/nextElementSection"
+	        android:text="un autre test"/>
+         
+      </RelativeLayout>
+       <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/endGameSection"
+		android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" 
+	    android:paddingTop="150dip"
+	    android:paddingLeft="00dip"
+	    android:paddingBottom="150dip"
+	    android:paddingRight="00dip"
+	    android:layout_below="@+id/topSection"
+	    android:background="#BB112233"
+	    >
+	       <com.naw.graphics.EndGameView
+		    android:id="@+id/customEndGameSection"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			/>
+	      <TextView
+	        android:id="@+id/titleEndGameSection"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/newHighScore"
+	        android:textColor="#ff000000"
+	        android:textStyle="bold"
+	        android:textSize="24sp"
+	        android:shadowColor="#aa000000"  
+	        android:shadowRadius="2.5"  
+	        android:shadowDx="1"  
+	        android:shadowDy="1" 
+	        android:paddingBottom="5dip"
+	        />
+	       <TextView
+	        android:id="@+id/scoreEndGameSection"
+	        android:layout_below="@+id/titleEndGameSection"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/finalScores"
+	        android:textColor="#ffebf727"
+	        android:textStyle="bold"
+	        android:textSize="20sp"
+	        android:paddingBottom="5dip"
+	        />
+	      <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	          android:layout_below="@+id/scoreEndGameSection"
+				android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			     android:paddingLeft="15dip"
+			    android:paddingRight="15dip"
+			    >
+	      <EditText
+			    android:id="@+id/editPseudo"
+			    android:layout_centerHorizontal="true"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:hint="@string/pseudo"
+			    android:textColor="#ff000000"
+		        android:textStyle="bold"
+		        android:textSize="18sp"
+		        
+			    />
+	      </RelativeLayout>
+	      <Button 
+	          android:layout_alignParentBottom="true"
+	          android:layout_centerHorizontal="true"
+	          android:layout_height="wrap_content"
+		     android:layout_width="wrap_content"
+		     android:text="@string/buttonSave"
+		     android:onClick="saveScoresWithPseudo"
+	          />
+		   
+     </RelativeLayout>
+
+</RelativeLayout>
